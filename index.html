@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deficify - Vitamin Tracker</title>
+    <meta name="description" content="Deficify helps you explore possible nutrient gaps from everyday symptoms, with educational supplement insights, safety cautions, and a simple daily schedule." />
+    <meta name="theme-color" content="#1D4ED8" />
+    <meta name="apple-itunes-app" content="app-id=6757545946" />
+    <link rel="canonical" href="https://deficify.com/" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Deficify" />
+    <meta property="og:title" content="Deficify - Vitamin Tracker" />
+    <meta property="og:description" content="Find possible nutrient gaps from everyday symptoms. One-time $4.99. No ads, no account." />
+    <meta property="og:url" content="https://deficify.com/" />
+    <meta property="og:image" content="https://deficify.com/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Deficify - Vitamin Tracker" />
+    <meta name="twitter:description" content="Find possible nutrient gaps from everyday symptoms. One-time $4.99. No ads, no account." />
+    <meta name="twitter:image" content="https://deficify.com/assets/og-image.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Deficify",
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "url": "https://deficify.com/",
+        "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD" }
+      }
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #101828;
+        background: #ffffff;
+        overflow-x: hidden;
+      }
+      main {
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 26px 22px 42px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+      }
+      a {
+        color: inherit;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        font-weight: 800;
+      }
+      .brand img {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+      }
+      .links {
+        display: flex;
+        gap: 18px;
+        color: #475467;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 320px;
+        gap: 42px;
+        align-items: center;
+        padding: 76px 0 60px;
+      }
+      .kicker {
+        color: #1d4ed8;
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 12px 0 0;
+        font-size: clamp(56px, 8vw, 82px);
+        line-height: 1;
+      }
+      .lead {
+        max-width: 630px;
+        color: #475467;
+        font-size: 22px;
+        line-height: 1.45;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 30px;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 52px;
+        border-radius: 8px;
+        padding: 0 20px;
+        background: #101828;
+        color: #ffffff;
+      }
+      .button.secondary {
+        background: #ffffff;
+        color: #101828;
+        border: 1px solid #d0d5dd;
+      }
+      .panel {
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        background: #f8fafc;
+        padding: 22px;
+      }
+      .panel img {
+        width: 92px;
+        height: 92px;
+        border-radius: 20px;
+      }
+      .panel ul {
+        border-top: 1px solid #e5e7eb;
+        list-style: none;
+        margin: 20px 0 0;
+        padding: 18px 0 0;
+      }
+      .panel li {
+        color: #344054;
+        font-weight: 700;
+        line-height: 1.45;
+        margin-top: 10px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .feature {
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 20px;
+      }
+      .feature h2 {
+        margin: 0;
+        font-size: 20px;
+      }
+      .feature p,
+      .notice {
+        color: #667085;
+        line-height: 1.55;
+      }
+      .notice {
+        margin-top: 38px;
+        border-radius: 8px;
+        background: #f8fafc;
+        padding: 18px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 30px;
+        color: #667085;
+        font-size: 13px;
+      }
+      @media (max-width: 760px) {
+        main {
+          width: 360px;
+          max-width: 100%;
+          margin: 0;
+          padding-inline: 20px;
+        }
+        nav {
+          align-items: flex-start;
+        }
+        .links {
+          gap: 14px;
+        }
+        .hero,
+        .grid {
+          display: block;
+        }
+        .hero {
+          padding: 54px 0 42px;
+        }
+        .lead {
+          font-size: 20px;
+        }
+        .actions {
+          display: grid;
+        }
+        .panel,
+        .feature {
+          margin-top: 28px;
+        }
+        footer {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a class="brand" href="/">
+          <img src="/assets/icon-192.png" alt="" />
+          <span>Deficify</span>
+        </a>
+        <div class="links">
+          <a href="/privacy/">Privacy</a>
+          <a href="/support/">Support</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div>
+          <div class="kicker">Vitamin tracker for everyday symptoms</div>
+          <h1>Deficify</h1>
+          <p class="lead">Explore possible nutrient gaps, review safety cautions, and build a simple supplement schedule without creating an account.</p>
+          <div class="actions">
+            <a class="button" href="https://apps.apple.com/us/app/deficify-vitamin-tracker/id6757545946">View on App Store</a>
+            <a class="button secondary" href="/support/">Get Support</a>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <img src="/assets/icon-192.png" alt="Deficify app icon" />
+          <ul>
+            <li>One-time $4.99 App Store purchase</li>
+            <li>No subscription, no ads, no account</li>
+            <li>Private symptom and schedule data stored on your device</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="grid">
+        <div class="feature">
+          <h2>Symptom-based nutrient patterns</h2>
+          <p>Select common symptoms like fatigue, brain fog, muscle cramps, or restless legs and review educational vitamin and mineral overlaps.</p>
+        </div>
+        <div class="feature">
+          <h2>Safety-aware supplement guidance</h2>
+          <p>Medication and condition cautions help down-rank or hide higher-risk options before you build a schedule.</p>
+        </div>
+        <div class="feature">
+          <h2>Daily schedule and reminders</h2>
+          <p>Save a clean supplement routine, check off what you took, and keep the plan simple enough to follow.</p>
+        </div>
+      </section>
+
+      <p class="notice">Deficify does not diagnose, treat, prescribe, or replace clinician judgment. Persistent, severe, or worsening symptoms warrant a conversation with a qualified healthcare professional.</p>
+
+      <footer>
+        <span>&copy; 2026 Deficify</span>
+        <span>office@ironcanyon.co</span>
+      </footer>
+    </main>
+  </body>
+</html>
