@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Deficify - Vitamin Tracker</title>
-    <meta name="description" content="Deficify helps you explore possible nutrient gaps from everyday symptoms, with educational supplement insights, safety cautions, and a simple daily schedule." />
+    <title>Deficify — Find Nutrient Deficiencies by Symptom | iOS App</title>
+    <meta name="description" content="Spot possible vitamin and mineral deficiencies from everyday symptoms like fatigue, brain fog, muscle cramps, and poor sleep. Deficify is a one-time $4.99 iOS app — no subscription, no ads, no account." />
+    <meta name="keywords" content="nutrient deficiency, vitamin deficiency, symptom tracker, magnesium deficiency, b12 deficiency, iron deficiency, vitamin d deficiency, brain fog, fatigue, supplement tracker" />
     <meta name="theme-color" content="#1D4ED8" />
     <meta name="apple-itunes-app" content="app-id=6757545946" />
     <link rel="canonical" href="https://deficify.com/" />
@@ -12,25 +13,94 @@
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Deficify" />
-    <meta property="og:title" content="Deficify - Vitamin Tracker" />
-    <meta property="og:description" content="Find possible nutrient gaps from everyday symptoms. One-time $4.99. No ads, no account." />
+    <meta property="og:title" content="Deficify — Find Nutrient Deficiencies by Symptom" />
+    <meta property="og:description" content="Turn symptoms like fatigue, brain fog, and muscle cramps into a focused vitamin and mineral shortlist. One-time $4.99. No subscription, no ads, no account." />
     <meta property="og:url" content="https://deficify.com/" />
     <meta property="og:image" content="https://deficify.com/assets/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Deficify - Vitamin Tracker" />
-    <meta name="twitter:description" content="Find possible nutrient gaps from everyday symptoms. One-time $4.99. No ads, no account." />
+    <meta name="twitter:title" content="Deficify — Find Nutrient Deficiencies by Symptom" />
+    <meta name="twitter:description" content="Turn symptoms like fatigue, brain fog, and muscle cramps into a focused vitamin and mineral shortlist. One-time $4.99. No subscription, no ads, no account." />
     <meta name="twitter:image" content="https://deficify.com/assets/og-image.png" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "MobileApplication",
         "name": "Deficify",
+        "alternateName": "Deficify - Vitamin Tracker",
+        "description": "Symptom-to-nutrient app that turns fatigue, brain fog, muscle cramps, and poor sleep into a focused vitamin and mineral shortlist with safety cautions and a simple daily schedule.",
         "operatingSystem": "iOS",
         "applicationCategory": "HealthApplication",
         "url": "https://deficify.com/",
+        "installUrl": "https://apps.apple.com/us/app/deficify-vitamin-tracker/id6757545946",
         "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD" }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Iron Canyon Ventures LLC",
+        "url": "https://deficify.com/",
+        "logo": "https://deficify.com/assets/icon-512.png",
+        "email": "office@ironcanyon.co"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does Deficify map symptoms to nutrient deficiencies?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deficify cross-references your selected symptoms against peer-reviewed associations from NIH and Examine databases, then returns an educational shortlist of vitamins and minerals with confidence ratings (higher, moderate, lower overlap) based on your symptom set."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Deficify cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deficify is a one-time $4.99 purchase on the App Store. There is no subscription, no recurring fees, no ads, and no account required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Deficify diagnose vitamin or mineral deficiencies?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Deficify is an educational tool that surfaces possible nutrient patterns associated with your symptoms. It does not diagnose, treat, prescribe, or replace clinician judgment. Persistent, severe, or worsening symptoms warrant a conversation with a qualified healthcare professional."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which vitamins and minerals does Deficify cover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deficify covers 25+ common vitamins and minerals, including magnesium, vitamin D, B12, B6, iron, zinc, calcium, folate, omega-3, and potassium. Each entry includes timing, food-first sources, safety cautions, and citation links."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my symptom data private?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. All symptom selections, supplement schedules, and reminders are stored on your device. Deficify does not require an account, does not collect analytics tied to your identity, and does not transmit personal health data to external servers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Deficify warn about medication interactions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deficify includes cautions for common medications and conditions including ACE inhibitors, blood thinners, PPIs, metformin, thyroid meds, steroids, antibiotics, pregnancy, and kidney disease. These cautions down-rank or hide higher-risk options before you build a schedule."
+            }
+          }
+        ]
       }
     </script>
     <style>
@@ -172,6 +242,51 @@
         background: #f8fafc;
         padding: 18px;
       }
+      .prose {
+        margin-top: 48px;
+      }
+      .prose h2 {
+        margin: 0 0 14px;
+        font-size: 28px;
+        line-height: 1.2;
+      }
+      .prose p,
+      .prose li {
+        color: #344054;
+        font-size: 17px;
+        line-height: 1.65;
+      }
+      .prose ol,
+      .prose ul {
+        padding-left: 22px;
+        margin: 14px 0 0;
+      }
+      .prose li {
+        margin-top: 8px;
+      }
+      .guide-list {
+        list-style: none;
+        padding: 0 !important;
+      }
+      .guide-list li {
+        padding: 14px 0;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .guide-list li:first-child {
+        border-top: 1px solid #e5e7eb;
+      }
+      .guide-list a {
+        color: #1d4ed8;
+        font-weight: 700;
+      }
+      .faq h3 {
+        margin: 22px 0 6px;
+        font-size: 18px;
+        line-height: 1.35;
+      }
+      .faq p {
+        margin: 0;
+      }
       footer {
         display: flex;
         justify-content: space-between;
@@ -220,7 +335,7 @@
     <main>
       <nav>
         <a class="brand" href="/">
-          <img src="/assets/icon-192.png" alt="" />
+          <img src="/assets/icon-192.png" alt="Deficify app icon" />
           <span>Deficify</span>
         </a>
         <div class="links">
@@ -231,9 +346,9 @@
 
       <section class="hero">
         <div>
-          <div class="kicker">Vitamin tracker for everyday symptoms</div>
-          <h1>Deficify</h1>
-          <p class="lead">Explore possible nutrient gaps, review safety cautions, and build a simple supplement schedule without creating an account.</p>
+          <div class="kicker">Nutrient deficiency tracker for iOS</div>
+          <h1>Find nutrient gaps from everyday symptoms</h1>
+          <p class="lead">Deficify turns symptoms like fatigue, brain fog, muscle cramps, and poor sleep into a focused vitamin and mineral shortlist — with safety cautions and a clean daily schedule.</p>
           <div class="actions">
             <a class="button" href="https://apps.apple.com/us/app/deficify-vitamin-tracker/id6757545946">View on App Store</a>
             <a class="button secondary" href="/support/">Get Support</a>
@@ -241,7 +356,7 @@
         </div>
 
         <aside class="panel">
-          <img src="/assets/icon-192.png" alt="Deficify app icon" />
+          <img src="/assets/icon-192.png" alt="Deficify iOS app icon — nutrient deficiency tracker" />
           <ul>
             <li>One-time $4.99 App Store purchase</li>
             <li>No subscription, no ads, no account</li>
@@ -253,22 +368,64 @@
       <section class="grid">
         <div class="feature">
           <h2>Symptom-based nutrient patterns</h2>
-          <p>Select common symptoms like fatigue, brain fog, muscle cramps, or restless legs and review educational vitamin and mineral overlaps.</p>
+          <p>Select common symptoms like fatigue, brain fog, muscle cramps, restless legs, or poor sleep and review educational vitamin and mineral overlaps — backed by NIH and peer-reviewed sources.</p>
         </div>
         <div class="feature">
           <h2>Safety-aware supplement guidance</h2>
-          <p>Medication and condition cautions help down-rank or hide higher-risk options before you build a schedule.</p>
+          <p>Medication and condition cautions — ACE inhibitors, blood thinners, PPIs, metformin, thyroid meds, steroids, antibiotics — help down-rank or hide higher-risk options before you build a schedule.</p>
         </div>
         <div class="feature">
           <h2>Daily schedule and reminders</h2>
-          <p>Save a clean supplement routine, check off what you took, and keep the plan simple enough to follow.</p>
+          <p>Save a clean supplement routine with morning, midday, and evening reminders. Check off what you took, swap items in a tap, and keep the plan simple enough to actually follow.</p>
         </div>
       </section>
 
-      <p class="notice">Deficify does not diagnose, treat, prescribe, or replace clinician judgment. Persistent, severe, or worsening symptoms warrant a conversation with a qualified healthcare professional.</p>
+      <section class="prose">
+        <h2>How Deficify works</h2>
+        <p>Feel tired, foggy, or crampy and wonder if a simple nutrient gap could be behind it? Deficify turns everyday symptoms into an educational shortlist of the vitamins and minerals most associated with them — so you can research smarter, eat better, and have a sharper conversation with your clinician.</p>
+        <ol>
+          <li><strong>Select the symptoms</strong> you are feeling — from fatigue and brain fog to muscle cramps and restless legs.</li>
+          <li><strong>Add optional safety flags</strong> (pregnancy, medications, kidney disease) and Deficify down-ranks or hides higher-risk options.</li>
+          <li><strong>Review evidence-backed supplement insights</strong> with timing, food-first sources, and citation links.</li>
+          <li><strong>Save a clean daily schedule</strong> with reminders that fit your morning routine.</li>
+        </ol>
+      </section>
+
+      <section class="prose">
+        <h2>Deficiency guides by nutrient and symptom</h2>
+        <p>Explore common nutrient deficiencies, what they can feel like, and which foods naturally supply each nutrient. Each guide links back to the app so you can build a personalized schedule in minutes.</p>
+        <ul class="guide-list">
+          <li><a href="/guides/magnesium-deficiency-symptoms/">Magnesium deficiency symptoms</a> — cramps, restless legs, poor sleep, anxiety.</li>
+          <li><a href="/guides/vitamin-d-deficiency-symptoms/">Vitamin D deficiency symptoms</a> — fatigue, low mood, bone aches, frequent colds.</li>
+          <li><a href="/guides/b12-deficiency-symptoms/">Vitamin B12 deficiency symptoms</a> — brain fog, tingling, exhaustion, mood changes.</li>
+          <li><a href="/guides/iron-deficiency-symptoms/">Iron deficiency symptoms</a> — fatigue, shortness of breath, cold hands, brittle nails.</li>
+          <li><a href="/guides/brain-fog-nutrient-causes/">Brain fog and nutrient causes</a> — which vitamins and minerals most commonly overlap.</li>
+          <li><a href="/guides/always-tired-vitamin-deficiency/">Always tired? Vitamin and mineral overlaps</a> — the shortlist to rule out first.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <h3>How does Deficify map symptoms to nutrient deficiencies?</h3>
+          <p>Deficify cross-references your selected symptoms against peer-reviewed associations from NIH and Examine databases, then returns an educational shortlist of vitamins and minerals with confidence ratings (higher, moderate, lower overlap) based on your symptom set.</p>
+          <h3>What does Deficify cost?</h3>
+          <p>Deficify is a one-time $4.99 purchase on the App Store. There is no subscription, no recurring fees, no ads, and no account required.</p>
+          <h3>Does Deficify diagnose vitamin or mineral deficiencies?</h3>
+          <p>No. Deficify is an educational tool that surfaces possible nutrient patterns associated with your symptoms. It does not diagnose, treat, prescribe, or replace clinician judgment. Persistent, severe, or worsening symptoms warrant a conversation with a qualified healthcare professional.</p>
+          <h3>Which vitamins and minerals does Deficify cover?</h3>
+          <p>Deficify covers 25+ common vitamins and minerals, including magnesium, vitamin D, B12, B6, iron, zinc, calcium, folate, omega-3, and potassium. Each entry includes timing, food-first sources, safety cautions, and citation links.</p>
+          <h3>Is my symptom data private?</h3>
+          <p>Yes. All symptom selections, supplement schedules, and reminders are stored on your device. Deficify does not require an account and does not transmit personal health data to external servers.</p>
+          <h3>Does Deficify warn about medication interactions?</h3>
+          <p>Deficify includes cautions for common medications and conditions including ACE inhibitors, blood thinners, PPIs, metformin, thyroid meds, steroids, antibiotics, pregnancy, and kidney disease.</p>
+        </div>
+      </section>
+
+      <p class="notice">Deficify is for educational purposes only. It does not diagnose, treat, prescribe, or replace clinician judgment. Persistent, severe, or worsening symptoms warrant a conversation with a qualified healthcare professional. If you are pregnant, breastfeeding, on prescription medications, or have a medical condition, consult your clinician before starting any supplement.</p>
 
       <footer>
-        <span>&copy; 2026 Deficify</span>
+        <span>&copy; 2026 Deficify · Iron Canyon Ventures LLC</span>
         <span>office@ironcanyon.co</span>
       </footer>
     </main>
