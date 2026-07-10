@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
+Disallow: /guides/
+Disallow: /symptoms
+Disallow: /analyzing
+Disallow: /results
+Disallow: /schedule
+Disallow: /supplement/
+Disallow: /demo
+Disallow: /paywall
 
 Sitemap: https://deficify.com/sitemap.xml
